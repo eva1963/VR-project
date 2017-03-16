@@ -1,0 +1,11 @@
+
+.DS_Store
+*.log
+gcoverage
+.idea/
+*.iml
+node_modules/*
+.vscode/.*
+.sass-cache
+static/.sass-cache
+.vscode
