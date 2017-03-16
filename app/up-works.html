@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>上传个人作品</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/main.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+    <!-- header部分 -->
+    <div class="header diff">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head">
+                        <a href="index.html" class="logo"><img src="static/img/logo.png"/></a>
+                        <ul class="menu">
+                            <li class="on"><a href="activity.html">活动</a></li>
+                            <li><a href="index.html">发现</a></li>
+                        </ul>
+                        <div class="search">
+                            <div class="btn-submit"></div>
+                            <input type="text" placeholder="请输入您要搜索的内容" hidden/>
+                        </div>
+                        <div class="user">
+                            <div class="same"><a href="up-works.html"><img src="static/img/upload.png"/></a></div>
+                            <div class="same person">
+                                <a href="#"><img src="static/img/me.png"/></a>
+                                <ul class="menu-list">
+                                    <li class="on"><a href="works.html">个人中心</a></li>
+                                    <li><a href="setting.html">我的设置</a></li>
+                                    <li><a href="#">退出登录</a></li>
+                                </ul>
+                                <div class="hsj"></div>
+                            </div>
+                            <div class="same"><a href="#"><img src="static/img/ews.png"/></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- main部分开始 -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pt20">
+                    <div class="setting">
+                        <!-- 左边作品信息描述 -->
+                        <div class="left">
+                            <div class="info-box">
+                                <div class="left"><span class="forward">*</span>作品标题：</div>
+                                <div class="right">
+                                    <label class="common-label"><input class="single" type="text" placeholder="作品标题"/></label>
+                                </div>
+                                <span class="tip">请填写作品标题</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="left"><span class="forward">*</span>作品类型：</div>
+                                <div class="right">
+                                    <label class="common-label">
+                                        <select class="single">
+                                            <option value="1" selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <span class="tip">请选择作品类型</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="left"><span class="forward">*</span>添加标签：</div>
+                                <div class="right pt13">
+                                    <label class="checkbox-inline"><input type="checkbox"/><span>标签</span></label>
+                                    <label class="checkbox-inline"><input type="checkbox"/><span>标签</span></label>
+                                    <label class="checkbox-inline "><input type="checkbox"/><span>标签</span></label>
+                                    <label class="checkbox-inline"><input type="checkbox"/><span>标签</span></label>
+                                    <label class="checkbox-inline"><input type="checkbox"/><span>标签</span></label>
+                                    <label class="checkbox-inline"><input type="checkbox"/><span>标签</span></label>
+                                </div>
+                                <span class="tip">请为作品添加标签</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="left"><span class="forward">*</span>文件大小：</div>
+                                <div class="right">
+                                    <label class="common-label"><input class="single" type="text" placeholder="30M"/></label>
+                                </div>
+                                <span class="tip">请填写文件大小</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="left"><span class="forward">*</span>文件清晰度：</div>
+                                <div class="right">
+                                    <label class="common-label">
+                                        <select class="single">
+                                            <option value="1" selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <span class="tip">请选择文件清晰度</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="left"><span class="forward">*</span>百度网盘地址：</div>
+                                <div class="right">
+                                    <label class="common-label"><input class="single" type="text" placeholder="HTTP://"/></label>
+                                </div>
+                                <span class="tip">请填写百度网盘链接</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="left">提取码：</div>
+                                <div class="right">
+                                    <label class="common-label"><input class="single" type="text" placeholder="提取码"/></label>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <div class="left">介绍：</div>
+                                <div class="right diff-right">
+                                    <label class="common-label">
+                                        <textarea class="setting-textarea" placeholder="介绍"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右边原创或者转载选择 -->
+                        <div class="right">
+                            <div class="top">
+                                <div class="group-radio">
+                                    <label class="single"><input type="radio" name="radio"/><span>原创</span></label>
+                                    <label class="single"><input type="radio"name="radio"/><span>转载</span></label>
+                                </div>
+                                <label class="website"><input type="text" placeholder="http://"/></label>
+                            </div>
+                            <div class="bottom">
+                                <h5>封面图</h5>
+                                <dl class="cover">
+                                    <dt><img src="static/img/pic1.png"/></dt>
+                                    <dd>
+                                        <div class="submit"><input type="file"/><span>上传封面图</span></div>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="pl170">
+                        <button class="btn cancel-btn" type="button">取消</button>
+                        <button class="btn ok-btn" type="button">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer部分 -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-txt">
+                    @VR
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script>
+    $(".btn-submit").click(function(){
+        $(".search input").animate({width: "300px"}).show();
+    });
+</script>
+</body>
+</html>

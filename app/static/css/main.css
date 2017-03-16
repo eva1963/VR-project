@@ -1,0 +1,1307 @@
+
+/*
+main style for vr
+eva create by 2016-5-11
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+}
+button,input,ul,li,a:focus,select {
+    border: none;
+    background: none;
+    outline: none;
+    list-style: none;
+}
+a {
+    color: #333;
+}
+a:hover,a:focus {
+    transition: all .3s ease;
+    text-decoration: none;
+}
+dl,ul,ol {
+    margin: 0;
+}
+
+/* 内设样式 */
+.fs14 {
+    font-size: 14px !important;
+}
+.pt13 {
+    padding-top: 13px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+.pl170 {
+    padding-left: 170px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+
+/* 登录模块样式 */
+.form {
+    /*margin: 160px 0;*/
+    margin:50px auto;
+    width: 528px;
+    height: 420px;
+
+}
+.form .title {
+    text-align: center;
+    font-size: 24px;
+    font-family: "宋体";
+    padding-bottom: 20px;
+}
+.form .login {
+    padding: 60px;
+    background: #fff;
+
+}
+.form .login .alert {
+    width : 100%;
+    padding: 15px 0 0;
+    margin: 0;
+}
+.form .login .same {
+    width : 100%;
+    padding: 20px 0 0 0;
+}
+.form .login .same .form-control {
+    width : 408px;
+    height: 56px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.form .login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    margin: 40px 0;
+}
+.form .page-header{
+    margin: 0;
+}
+.form p {
+    color: #999;
+}
+.form a {
+    color: #333;
+}
+.form .login .remember {
+    width : 100%;
+    color: #666;
+}
+.form .login .remember input {
+    margin-right: 10px;
+}
+/* 注册获取验证码 */
+.form .login .code {
+    width: 100%;
+    padding-top: 20px;
+}
+.form .login .code input {
+    width: 240px;
+    display: inline-block;
+    height: 56px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.form .login .code .send {
+    float: right;
+    padding: 0 30px;
+    border: 1px solid #ccc;
+    height: 56px;
+    line-height: 56px;
+    cursor: pointer;
+}
+
+
+/****** 首页样式 ******/
+/* 导航 */
+.header {
+    width: 100%;
+}
+.head {
+    width: 100%;
+    height: 72px;
+}
+.head .logo {
+    float: left;
+    width: 144px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 72px;
+}
+.head .logo img {
+    vertical-align: -6px;
+}
+.head .menu {
+    float: left;
+}
+.head .menu li {
+    display: inline-block;
+    width: 96px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+}
+.head .menu li a {
+    display: block;
+    color: #777;
+    font-size: 16px;
+}
+.head .menu li a:hover,.head .menu li.on a {
+    text-decoration: none;
+    color: #fff;
+}
+.head .search {
+    position: relative;
+    padding-top: 27px;
+    float: left;
+}
+.head .search .btn-submit {
+    position: absolute;
+    left: 10px;
+    top: 23px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url("../img/search.png") no-repeat center;
+    cursor: pointer;
+}
+.head .search input {
+    float: left;
+    width: 0;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.6);
+    margin-top: -10px;
+    margin-left: 10px;
+    padding-left: 25px;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+/* 用户登录之前 */
+.head .login-btn {
+    float: right;
+    width: 96px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+}
+.head .login-btn:hover {
+    color: #777;
+}
+/* 用户登录之后 */
+.head .user {
+    float: right;
+}
+.head .same,.head .middle,.head .right {
+    float: left;
+    width: 60px;
+    height: 72px;
+}
+.head .same>a {
+    display: block;
+    padding: 25px 0;
+}
+.head .user .person {
+    position: relative;
+}
+.head .user .person .hsj {
+    position: absolute;
+    top: 59px;
+    left: 5px;
+    z-index: 99;
+    width: 20px;
+    height: 20px;
+    background: url("../img/hsj.png") no-repeat center;
+    visibility: hidden;
+}
+.head .user .person .menu-list {
+    position: absolute;
+    top: 72px;
+    left: -25px;
+    z-index: 99;
+    width: 80px;
+    padding: 10px 0;
+    border-radius: 2px;
+    background: #333;
+    visibility: hidden;
+}
+.head .user .person:hover .menu-list,.head .user .person:hover .hsj {
+    visibility: visible;
+}
+.head .user .person .menu-list li {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.head .user .person .menu-list li a {
+    color: #777;
+    font-size: 12px;
+}
+.head .user .person .menu-list li.on a,.head .user .person .menu-list li:hover a {
+    color: #fff;
+    transition: all .3s ease;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 436px;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+.active-banner {
+    width: 100%;
+    height: 436px;
+    background-image: url("../img/pic4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+
+/* 标签 */
+.tag-group {
+    width: 100%;
+    background: #f1f1f1;
+    border-bottom: 1px solid #dddddd;
+}
+.tag-list {
+    width: 600px;
+    margin: 0 auto;
+}
+.tag-list li {
+    position: relative;
+    padding: 20px 80px;
+    float: left;
+    text-align: center;
+}
+.tag-list .up {
+    background: url("../img/more_up.png") no-repeat 115px center;
+}
+.tag-list .down {
+    background: url("../img/more_down.png") no-repeat 115px center;
+}
+.tag-list li a {
+    font-size: 16px;
+}
+.tag-list li a:hover {
+    color: #333;
+}
+.tag-list li .tags {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: 3;
+    width: 330px;
+    padding: 20px;
+    background: rgba(180,180,180,0.3);
+    visibility: hidden;
+}
+.tag-list li:hover .tags {
+    visibility: visible;
+    transition: all .3s ease;
+}
+.tag-list li .tags a {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 3px;
+    float: left;
+}
+.tag-list li .tags a.on {
+    background: #fff;
+    color: red;
+}
+
+
+
+/* 最热 */
+.hot {
+    width: 100%;
+    padding: 40px 0 10px;
+    overflow: hidden;
+}
+.common-bar {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+.common-bar .search-text {
+    font-size: 16px;
+    color: #777;
+}
+.common-bar .hot-text {
+    float: left;
+    font-size: 20px;
+    color: #333;
+}
+.common-bar .last {
+    float: left;
+    /*font-size: 16px;*/
+    color: #333;
+}
+.common-bar .last li {
+    float: left;
+    padding-right: 10px;
+}
+.common-bar .last li.on a,.common-bar .last li a:hover {
+    color: red;
+}
+.hot-list {
+    overflow: hidden;
+    width: 100%;
+}
+.hot-list li:nth-child(4n) {
+    padding-right: 0;
+
+}
+.hot-list>li {
+    width: 25%;
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.hot-item {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.hot-item:nth-child(4n) {
+    margin-right: 0;
+}
+.hot-item:hover {
+    box-shadow: 0 0 5px #f0f0f0;
+    border-color: #eee;
+}
+.hot-item dt {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.hot-item dt img {
+    height: 100%;
+    transition: all .5s ease-out;
+}
+.hot-item dt img:hover {
+    transform: matrix(1.04, 0, 0, 1.04, 0, 0)
+}
+.hot-item dd {
+    padding: 10px 10px 20px;
+    color: #333;
+    font-size: 16px;
+}
+.hot-item dd ul.tip-list {
+    float: right;
+}
+.hot-item dd ul.tip-list li {
+    float: left;
+}
+.hot-item dd ul.tip-list li.brower {
+    padding: 0 20px;
+    background: url("../img/look.png") no-repeat left center;
+}
+.hot-item dd ul.tip-list li.comment {
+    padding-left: 20px;
+    background: url("../img/comment.png") no-repeat left center;
+}
+.hot .loading {
+    display: block;
+    width: 100%;
+    color: #777;
+    line-height: 40px;
+    padding-top: 20px;
+}
+
+
+/* vr详情样式 */
+.diff {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+.diff .head .logo,.diff .head .login-btn:hover,.diff .head .login-btn {
+    color: #000;
+}
+.diff .head  .menu li a:hover,.diff .head .menu li.on a {
+    text-decoration: none;
+    color: #000;
+}
+.diff .head .search input {
+    color: #777;
+    border-color: rgba(200,200,200,0.4);
+}
+.main {
+    background: #f1f1f1;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+/* vr详情左边内容部分 */
+.main .show {
+    width: 75%;
+    float: left;
+}
+.main .show .top {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+.show .top .created {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 115px;
+    height: 115px;
+    background: url("../img/original.png") no-repeat center;
+}
+.main .show .top h2 {
+    width: 100%;
+    font-size: 20px;
+}
+.main .show .top .desc {
+    width: 100%;
+    color: #777;
+    background: #000;
+}
+.main .show .top .desc .time {
+    float: left;
+    padding: 0 40px 0 0;
+}
+.main .show .top .tip-list {
+    float: left;
+    overflow: hidden;
+}
+.main .show .top .tip-list li {
+    float: left;
+}
+.main .show .top .tip-list li.brower {
+    padding: 0 20px;
+    background: url("../img/look.png") no-repeat left center;
+}
+.main .show .top .tip-list li.comment {
+    padding-left: 40px;
+    background: url("../img/comment.png") no-repeat 20px center;
+}
+.show .middle {
+    width: 100%;
+    padding: 20px 40px;
+    background: #fff;
+}
+.show .middle p {
+    color: #777;
+}
+.show .middle p strong {
+    color: #333;
+}
+.show .middle .pic,.show .middle .pic img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.show .middle .download {
+    width: 100%;
+}
+.show .middle .download a {
+    display: block;
+    width: 166px;
+    height: 56px;
+    background: url("../img/download.png") no-repeat center;
+    margin: 20px auto 40px;
+}
+.warn-info {
+    float: right;
+    padding-top: 20px;
+}
+.warn-info li {
+    float: left;
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+}
+.warn-info .start {
+    background: url("../img/collections.png") no-repeat left center;
+}
+.warn-info .share {
+    background: url("../img/forward.png") no-repeat left center;
+}
+.warn-info .warn {
+    position: relative;
+    background: url("../img/report.png") no-repeat left center;
+}
+.warn-info .warn:hover .warn-list,.warn-info .warn:hover .triangle {
+    visibility: visible;
+    transition: all .3s ease;
+}
+.warn-info .warn .triangle {
+    position: absolute;
+    top: 16px;
+    right: 5px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    background: url("../img/sanjiao.png") no-repeat center;
+    visibility: hidden;
+}
+.warn-info .warn .warn-list {
+    position: absolute;
+    top: 40px;
+    right: -40px;
+    z-index: 9;
+    width: 240px;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    visibility: hidden;
+}
+.warn-info .warn-list li {
+    width: 100%;
+    color: #777;
+}
+.warn-info .warn-list li label{
+    padding: 0 10px 0 0 ;
+}
+.push-comment {
+    margin-top: 20px;
+    width: 100%;
+    padding: 40px;
+    background: #ffffff;
+    overflow: hidden;
+}
+.bb {
+    border-bottom: 1px solid #f1f1f1;
+}
+.push-comment .left {
+    width: 11%;
+    padding-right: 20px;
+    float: left;
+}
+.push-comment .left img {
+    width: 70px;
+    height: 70px;
+}
+.push-comment .right {
+    width: 89%;
+    float: left;
+}
+.push-comment .push-con {
+    height: 140px;
+    width: 100%;
+}
+.push-btn {
+    padding: 5px 25px;
+    background: #000;
+    color: #fff;
+    /*margin-top: 20px;*/
+    border-radius: 2px;
+}
+.push-btn:hover,.push-btn:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.comment-list {
+    background: #fff;
+}
+.vr-comment-list {
+    padding: 0 40px 60px;
+}
+.comment-list .comment-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+.comment-list .comment-item .nick {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.comment-list .comment-item .nick .left {
+    width: 90px;
+    height: 70px;
+    float: left;
+}
+.comment-list .comment-item .nick .left img {
+    width: 70px;
+    height: 70px;
+}
+.comment-list .comment-item .nick .right {
+    float: left;
+}
+.comment-list .comment-item .nick .right h4 {
+    color: #333;
+}
+.comment-list .comment-item .nick .right .time {
+    color: #777;
+}
+.comment-list .comment-item .con .origin {
+    background: #f1f1f1;
+    padding: 20px;
+    overflow: hidden;
+}
+.comment-list .comment-item .bottom {
+    padding: 20px 0;
+    clear: both;
+}
+.comment-item .replay .push-con {
+    height: 76px;
+    width: 100%;
+    padding: 8px;
+    background: no-repeat;
+    border: 1px solid #f1f1f1;
+    resize: none;
+}
+/* vr详情右边关注部分 */
+.main .attention {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.main .attention .list {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    overflow: hidden;
+}
+.main .attention .list .left {
+    width: 40%;
+    height: 80px;
+    float: left;
+}
+.main .attention .list .left img {
+    width: 80px;
+    height: 80px;
+}
+.main .attention .list .right {
+    width: 60%;
+    float: left;
+}
+.main .attention .list .right h4 {
+    font-size: 16px;
+    padding-bottom: 13px;
+}
+
+/* 个人中心 */
+.photo {
+    background: #f1f1f1;
+    padding: 70px 0;
+    width: 100%;
+}
+.photo .photo-box {
+    width: 120px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+.photo .photo-box .yours {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #000;
+}
+.photo .photo-box .yours img {
+    width: 120px;
+}
+.photo-box p {
+    line-height: 40px;
+}
+
+/* 个人中心-作品 收藏 关于 */
+.content {
+    padding: 40px 0;
+    background: #fff;
+}
+.content .toggle {
+    border-bottom: 1px solid #f1f1f1;
+}
+.content .toggle .toggle-bar {
+    width: 543px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content .toggle-bar li {
+    float: left;
+    padding: 0 60px 30px;
+    font-size: 20px;
+    color: #777;
+    cursor: pointer;
+}
+.content .toggle-bar li a {
+    color: #777;
+}
+.content .toggle-bar li a:hover,.content .toggle-bar li.on a {
+    color: #333;
+}
+.content .toggle-bar li.works {
+    background: url("../img/works_ed.png") no-repeat 20px top;
+}
+.content .toggle-bar li.worksed {
+    background: url("../img/worksed.png") no-repeat 20px top;
+}
+.content .toggle-bar li.collect {
+    background: url("../img/Collection.png") no-repeat 20px 3px;
+}
+.content .toggle-bar li.collected {
+    background: url("../img/Collectioned.png") no-repeat 20px 3px;
+}
+.content .toggle-bar li.about {
+    background: url("../img/about.png") no-repeat 25px top;
+}
+.content .toggle-bar li.abouted {
+    background: url("../img/abouted.png") no-repeat 25px top;
+}
+
+/* 个人中心 - 收藏 */
+.collect-con {
+    padding: 20px 0 100px;
+    overflow: hidden;
+}
+
+
+/* 个人中心 - 关于 */
+.about-con {
+    overflow: hidden;
+    /*padding-top: 20px;*/
+}
+.about-con .top {
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.about-con .top .fans {
+    width: 560px;
+    margin: 0 auto;
+}
+.about-con .top .fans .left {
+    float: left;
+    width: 280px;
+}
+.about-con .top .fans .left h2 {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+.about-con .top .fans .left .desc {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-con .top .fans .left .phone {
+    color: #777;
+    padding-left: 70px;
+    margin: 0 auto;
+    line-height: 35px;
+}
+.about-con .top .fans .left .birth {
+    padding-left: 90px;
+}
+.about-con .middle {
+    padding: 20px 0;
+    overflow: hidden;
+}
+.about-con .middle .attenting {
+    padding: 20px 0 0;
+    overflow: hidden;
+}
+.about-con .middle .attenting .count {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.about-con .middle .attenting .count li {
+    float: left;
+    padding-right: 20px;
+}
+.about-con .middle .attenting .count li dl {
+    width: 70px;
+    height: 100px;
+    overflow: hidden;
+}
+.about-con .middle .attenting .count li dl dt {
+    width: 70px;
+    height: 70px;
+    background: red;
+}
+.about-con .middle .attenting .count li dl dt img {
+    width: 70px;
+}
+.about-con .middle .attenting .count li dl dd {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.about-con .middle .attenting .show-more {
+    width: 100%;
+    padding: 20px 0 0;
+    overflow: hidden;
+}
+.about-con .middle .attenting .show-more a {
+    display: block;
+    width: 100px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: #777;
+    border: 1px solid #777;
+}
+.about-con .middle .attenting .show-more a:hover {
+    background: red;
+    color: #fff;
+    border-color: red;
+}
+
+/* 个人中心-作品展示 */
+.works-con {
+    padding: 0 0 40px;
+}
+.work-list {
+    padding-top: 40px;
+    overflow: hidden;
+}
+.work-list .work-item {
+    width: 33.333%;
+    float: left;
+    padding: 0 40px 0 0;
+}
+.work-list .work-item:nth-child(3n) {
+    padding-right: 0;
+
+}
+.work-item dl {
+    overflow: hidden;
+}
+.work-item dl dt {
+    width: 100%;
+    height: 200px;
+    background: red;
+    overflow: hidden;
+}
+.work-item dl dt img {
+    width: 100%;
+}
+.work-item dl dd {
+    padding: 10px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.work-item .edit {
+    height: 30px;
+    float: right;
+    visibility: hidden;
+}
+.work-item .edit li {
+    padding-left: 20px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+}
+.work-item .edit li a {
+    color: #2a6496;
+}
+.work-item .edit li a:hover {
+    color: red;
+}
+.work-item:hover .edit {
+    visibility: visible;
+}
+/* 分页开始 */
+.page {
+    width: 220px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.page i {
+    font-style: normal;
+}
+.page .count {
+    color: #777;
+    display: inline-block;
+}
+.page .page-count {
+    padding: 0 0 0 20px;
+    display: inline-block;
+}
+.page .page-count a {
+    display: inline-block;
+    padding: 0 5px;
+}
+.page .page-count a.ban {
+    color: #777;
+}
+
+/* 个人设置 */
+.setting {
+    margin: 20px 0 40px 0;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+.setting>.top {
+    padding: 40px;
+    overflow: hidden;
+}
+.setting-bar {
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 20px;
+}
+.setting .top .upload-head .left {
+    float: left;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+.setting .top .upload-head .left img {
+    width: 140px;
+    height: 140px;
+}
+.setting .top .upload-head .right {
+    float: left;
+    padding: 20px;
+}
+.setting .top .upload-head .right p {
+    width: 100%;
+    line-height: 50px;
+    color: #777;
+}
+ .submit {
+    position: relative;
+    width: 114px;
+    height: 40px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+ .submit input,.submit span {
+    width: 114px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ .submit input {
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+ .submit span {
+    z-index: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.setting .middle {
+    padding: 40px;
+    overflow: hidden;
+}
+.info-box {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.info-box .left {
+    width: 90px;
+    height: 48px;
+    line-height: 48px;
+    float: left;
+}
+.info-box .left .forward {
+    display: inline-block;
+    width: 10px;
+    height: 48px;
+    line-height: 48px;
+    color: red;
+    vertical-align: -3px;
+}
+.info-box .right {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.info-box .diff-right {
+    width: 70%;
+}
+.info-box .right .common-label {
+    width: 100%;
+}
+.info-box .right .common-label input[type='checkbox'] {
+    background: #000;
+}
+.info-box .tip {
+    padding: 0 20px;
+    height: 48px;
+    line-height: 48px;
+    color: red;
+}
+.info-box .right .single {
+    width: 100%;
+    height: 48px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+.info-box .right .sex {
+    padding: 10px 20px 0 0;
+}
+.info-box .right .sex input {
+    width: 20px;
+    height: 20px;
+}
+.info-box .right .sex span {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: 3px;
+    font-size: 16px;
+    color: #333;
+}
+.setting>.bottom {
+    padding: 40px;
+    overflow: hidden;
+}
+.group-btn {
+    padding-left: 130px;
+}
+.btn {
+    padding: 7px 30px;
+    border-radius: 4px;
+}
+.cancel-btn {
+    background: #ffffff;
+    border: 1px solid #ccc;
+}
+.ok-btn {
+    border: 1px solid red;
+    color: #fff;
+    background: red;
+    margin-left: 20px;
+}
+.ok-btn:hover {
+    color: #fff;
+}
+
+/* 上传个人作品 */
+textarea {
+    padding: 8px;
+    border: 1px solid #f1f1f1;
+    resize: none;
+}
+.setting>.left {
+    width: 70%;
+    float: left;
+    padding: 40px 0 40px 40px;
+}
+.setting>.left .info-box .left{
+    width: 18%;
+}
+.setting-textarea {
+    height: 300px;
+    width: 100%;
+    border-color: #ccc;
+}
+.setting>.right {
+    width: 30%;
+    float: left;
+    padding: 40px;
+}
+.setting>.right .top {
+    padding-bottom: 20px;
+}
+.setting>.right .top .group-radio {
+    padding-bottom: 5px;
+}
+.setting>.right .top .group-radio .single {
+    padding-right: 50px;
+    padding-left: 20px;
+}
+.setting>.right .top .group-radio .single input {
+    width : 20px;
+    height: 20px;
+}
+.setting>.right .top .group-radio .single span {
+    padding-left: 10px;
+    vertical-align: 3px;
+}
+.setting>.right .top .website {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #f1f1f1;
+    padding: 8px;
+}
+.setting>.right .bottom {
+    overflow: hidden;
+}
+.setting>.right .bottom .cover  {
+    overflow: hidden;
+}
+.setting>.right .bottom .cover dt  {
+    width: 100%;
+
+    background: red;
+}
+.setting>.right .bottom .cover dt img  {
+    width: 100%;
+}
+.setting>.right .bottom .cover dd  {
+    width: 100%;
+    padding: 10px 0;
+}
+.setting>.right .bottom .cover dd .submit {
+    width: 100px;
+    height: 35px;
+    margin: 0 auto;
+    border-radius: 0;
+    background: #666;
+    border-color: #666;
+}
+.setting>.right .bottom .cover dd .submit span {
+    width: 100px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 35px;
+}
+
+/* 活动进行时 */
+.activity-bar {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-bottom: none;
+    overflow: hidden;
+}
+.activity-bar .toggle-bar {
+    width: 200px;
+    margin: 0 auto;
+}
+.activity-bar .toggle-bar li {
+    float: left;
+    padding: 40px 20px;
+}
+.activity-bar .toggle-bar li a {
+    font-size: 16px;
+    color: #777;
+}
+.activity-bar .toggle-bar li.on a {
+    color: #333;
+}
+.activity {
+    padding: 0 0 40px 40px;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+}
+.activity li {
+    width: 50%;
+    float: left;
+    padding: 40px 40px 0 0;
+    overflow: hidden;
+}
+.activity li .activity-item {
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+.activity li .activity-item dt {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.activity li .activity-item dt img {
+    width: 100%;
+}
+.activity li .activity-item dd {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+.activity li .activity-item dd .title {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.activity li .activity-item dd .time {
+    width: 100%;
+    color: #777;
+}
+.activity li .activity-item dd .time p {
+    width: 50%;
+    padding-left: 20px;
+}
+.activity li .activity-item dd .time .place {
+    background: url("../img/location.png") no-repeat left center;
+}
+.activity li .activity-item dd .time .over {
+    text-align: right;
+    background: url("../img/time.png") no-repeat 60px center;
+}
+.activity li .activity-item dd .time .over span {
+    color: red;
+    font-weight: 500;
+    padding: 0 5px;
+}
+.activity li .activity-item dd .time .look {
+    display: block;
+    float: right;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: red;
+    color: #fff;
+}
+
+/* 活动详情 */
+.active {
+    padding: 40px;
+}
+.active p {
+    text-indent: 2em;
+    padding-top: 20px;
+    color: #777;
+    text-align: justify;
+}
+.active .active-pic {
+    width: 100%
+}
+
+/* footer部分 */
+.footer {
+    width: 100%;
+    background: #000;
+}
+.footer .footer-txt {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #f3f3f3;
+    text-align: center;
+}
